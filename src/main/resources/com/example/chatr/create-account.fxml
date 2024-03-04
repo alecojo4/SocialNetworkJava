@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="mainRegister" prefHeight="600.0" prefWidth="400.0" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatr.controllers.CreateAccountController">
+    <children>
+      <ImageView fitHeight="82.0" fitWidth="72.0" focusTraversable="true" layoutX="80.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="165.0" layoutY="22.0" prefHeight="70.0" prefWidth="154.0" text="ChatR">
+         <font>
+            <Font name="Franklin Gothic Medium" size="58.0" />
+         </font>
+      </Label>
+        <Label alignment="CENTER" layoutX="-1.0" layoutY="95.0" prefHeight="70.0" prefWidth="405.0" text="Register">
+            <font>
+                <Font name="Century" size="48.0" />
+            </font>
+        </Label>
+        <Button fx:id="LoginButton" layoutX="143.0" layoutY="521.0" mnemonicParsing="false" onMouseClicked="#onSubmitButtonClick" prefHeight="50.0" prefWidth="120.0" text="Submit">
+            <font>
+                <Font size="24.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </Button>
+      <ImageView fx:id="backLoginButton" fitHeight="50.0" fitWidth="62.0" layoutX="15.0" layoutY="546.0" onMouseClicked="#onBackLoginClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <VBox layoutX="61.0" layoutY="179.0" prefHeight="318.0" prefWidth="282.0" spacing="15.0">
+         <children>
+              <TextField fx:id="UsernameTextField" alignment="CENTER" prefHeight="50.0" prefWidth="240.0" promptText="Username">
+                  <font>
+                      <Font size="24.0" />
+                  </font>
+              </TextField>
+              <TextField fx:id="FirstNameTextField" alignment="CENTER" prefHeight="50.0" prefWidth="240.0" promptText="First Name">
+                  <font>
+                      <Font size="24.0" />
+                  </font>
+              </TextField>
+              <TextField fx:id="LastNameTextField" alignment="CENTER" prefHeight="50.0" prefWidth="240.0" promptText="Last Name">
+                  <font>
+                      <Font size="24.0" />
+                  </font>
+              </TextField>
+              <PasswordField fx:id="PasswordField" alignment="CENTER" prefHeight="50.0" prefWidth="240.0" promptText="Password">
+                  <font>
+                      <Font size="24.0" />
+                  </font>
+              </PasswordField>
+              <PasswordField fx:id="ConfirmPasswordField" alignment="CENTER" prefHeight="50.0" prefWidth="240.0" promptText="Confirm password">
+                  <font>
+                      <Font size="24.0" />
+                  </font>
+              </PasswordField>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="mainLogin" prefHeight="600.0" prefWidth="400.0" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatr.controllers.LoginController">
+    <children>
+      <ImageView fitHeight="82.0" fitWidth="72.0" focusTraversable="true" layoutX="80.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="165.0" layoutY="22.0" prefHeight="70.0" prefWidth="154.0" text="ChatR">
+         <font>
+            <Font name="Franklin Gothic Medium" size="58.0" />
+         </font>
+      </Label>
+        <Label alignment="CENTER" layoutY="120.0" prefHeight="17.0" prefWidth="400.0" text="Login">
+            <font>
+                <Font name="Gabriola" size="64.0" />
+            </font>
+        </Label>
+        <TextField fx:id="UsernameTextField" alignment="CENTER" layoutX="80.0" layoutY="223.0" prefHeight="50.0" prefWidth="240.0" promptText="Username">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="PasswordField" alignment="CENTER" layoutX="80.0" layoutY="300.0" prefHeight="50.0" prefWidth="240.0" promptText="Password">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </PasswordField>
+        <Button fx:id="LoginButton" layoutX="140.0" layoutY="392.0" mnemonicParsing="false" onMouseClicked="#onLoginButtonClick" prefHeight="50.0" prefWidth="120.0" text="Login">
+            <font>
+                <Font size="24.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </Button>
+        <Label fx:id="CreateAccountLabel" layoutX="111.0" layoutY="483.0" onMouseClicked="#onCreateAccountLabelClick" onMouseEntered="#onCreateAccountLabelEntered" onMouseExited="#onCreateAccountLabelExited" text="Create an account" textFill="WHITE">
+            <font>
+                <Font name="Book Antiqua Bold" size="22.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </Label>
+    </children>
+</AnchorPane>
